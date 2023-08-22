@@ -1,0 +1,53 @@
+<html>
+<head></head>
+
+<body>
+<div  hight=50% width=50%>
+    <div id="demo">
+       
+    </div>
+    <input type="number" id="number" value="roll number">
+<button  onclick="myFunction()">Submit</button>
+<!-- <button onclick="ok()">Next</button> -->
+<script>
+    function myFunction() {
+  var num = document.getElementById("number").value;
+//   document.getElementById("demo").innerText= num;
+  
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "button");
+  x.setAttribute("value", num);
+  document.body.appendChild(x);
+  
+  var y = document.createElement("IMG");
+  y.setAttribute("src", "https://khec.edu.np/uploads/student/"+num+".jpg");
+  y.setAttribute("width", "250");
+  y.setAttribute("height", "250");
+  y.setAttribute("alt", "KHEC std profile");
+  document.body.appendChild(y);
+  
+
+    }
+//     function ok(){
+//       var num = document.getElementById("number").value;
+// //   document.getElementById("demo").innerText= num;
+// var nex=Number(num);
+// nex=nex-1;
+  
+//   var x = document.createElement("INPUT");
+//   x.setAttribute("type", "button");
+//   x.setAttribute("value", nex);
+//   document.body.appendChild(x);
+  
+//   var y = document.createElement("IMG");
+//   y.setAttribute("src", "https://khec.edu.np/uploads/student/"+nex+".jpg");
+//   y.setAttribute("width", "250");
+//   y.setAttribute("height", "250");
+//   y.setAttribute("alt", "KHEC std profile");
+//   document.body.appendChild(y);
+  
+//     }
+</script>
+</div>
+</body>
+</html>
